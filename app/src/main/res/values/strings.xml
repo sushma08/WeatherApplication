@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="cityName">City (i.e. Charlotte)</string>
+    <string name="stateName">State (i.e. NC)</string>
+    <string name="descText">There is no city in your Favorites</string>
+    <string name="activity_name">City Weather</string>
+    <string name="currLoc">Current Location:</string>
+    <string name="maxTemp">Max Temperature:</string>
+    <string name="minTemp">Min Temperature:</string>
+    <string name="FeelsLike">Feels Like:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="dewpoint">Dewpoint:</string>
+    <string name="pressure">Pressure:</string>
+    <string name="clouds">Clouds:</string>
+    <string name="winds">Winds:</string>
+    <string name="fav">Add to Favorites</string>
+    <string name="sbtBtn">Submit</string>
+</resources>

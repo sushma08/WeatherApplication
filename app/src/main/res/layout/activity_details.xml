@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/currLoc"
+                android:id="@+id/textView2"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/textViewtemp"
+                android:layout_toStartOf="@+id/textViewtemp"
+                android:maxWidth="150dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Boston, MA (4:00 am)"
+                android:id="@+id/textViewDetailsLoc"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_alignLeft="@+id/imageViewDetails"
+                android:layout_alignStart="@+id/imageViewDetails"
+                android:layout_alignParentEnd="false" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:minWidth="100dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageViewDetails"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewtemp"
+                android:layout_below="@+id/imageViewDetails"
+                android:layout_alignLeft="@+id/textViewClimateType"
+                android:layout_alignStart="@+id/textViewClimateType" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/maxTemp"
+                android:id="@+id/textViewMax"
+                android:layout_above="@+id/textViewMinTemp"
+                android:layout_toLeftOf="@+id/textViewMaxTemp"
+                android:layout_toStartOf="@+id/textViewMaxTemp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewMaxTemp"
+                android:layout_marginTop="17dp"
+                android:layout_below="@+id/textViewClimateType"
+                android:layout_alignLeft="@+id/textViewFeelsLike"
+                android:layout_alignStart="@+id/textViewFeelsLike" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/minTemp"
+                android:id="@+id/textViewMin"
+                android:layout_below="@+id/textViewMax"
+                android:layout_alignLeft="@+id/textViewMax"
+                android:layout_alignStart="@+id/textViewMax" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewMinTemp"
+                android:layout_below="@+id/textViewMaxTemp"
+                android:layout_toRightOf="@+id/textViewMax"
+                android:layout_toEndOf="@+id/textViewMax" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/FeelsLike"
+                android:id="@+id/textView3"
+                android:layout_marginTop="55dp"
+                android:layout_below="@+id/textViewMin"
+                android:layout_toLeftOf="@+id/textViewClimateType"
+                android:layout_toStartOf="@+id/textViewClimateType" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/humidity"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/textView3"
+                android:layout_toLeftOf="@+id/textViewClimateType" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/dewpoint"
+                android:id="@+id/textView5"
+                android:layout_below="@+id/textView4"
+                android:layout_toLeftOf="@+id/textViewClimateType" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/pressure"
+                android:id="@+id/textView6"
+                android:layout_below="@+id/textView5"
+                android:layout_toLeftOf="@+id/textViewClimateType" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/clouds"
+                android:id="@+id/textView7"
+                android:layout_below="@+id/textView6"
+                android:layout_toLeftOf="@+id/textViewClimateType" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/winds"
+                android:id="@+id/textView8"
+                android:layout_below="@+id/textView7"
+                android:layout_toLeftOf="@+id/textViewClimateType" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewFeelsLike"
+                android:layout_above="@+id/textViewHumidity"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_toEndOf="@+id/textView3"
+                android:layout_marginLeft="46dp"
+                android:layout_marginStart="46dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewHumidity"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_alignLeft="@+id/textViewFeelsLike"
+                android:layout_alignStart="@+id/textViewFeelsLike" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewDewpoint"
+                android:layout_below="@+id/textViewHumidity"
+                android:layout_alignLeft="@+id/textViewHumidity"
+                android:layout_alignStart="@+id/textViewHumidity" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewPressure"
+                android:layout_above="@+id/textViewClouds"
+                android:layout_alignLeft="@+id/textViewClouds"
+                android:layout_alignStart="@+id/textViewClouds" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewClouds"
+                android:layout_alignBottom="@+id/textView7"
+                android:layout_alignLeft="@+id/textViewDewpoint"
+                android:layout_alignStart="@+id/textViewDewpoint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewWinds"
+                android:layout_alignTop="@+id/textView8"
+                android:layout_alignLeft="@+id/textViewClouds"
+                android:layout_alignStart="@+id/textViewClouds" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textViewClimateType"
+                android:layout_below="@+id/textViewtemp"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
